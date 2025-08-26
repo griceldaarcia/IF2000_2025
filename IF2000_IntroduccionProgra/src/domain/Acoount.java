@@ -8,7 +8,7 @@ package domain;
  *
  * @author Griss
  */
-public abstract class Acoount {
+/*public abstract class Acoount {
     
     //Atributes
     private String accountNumber;
@@ -64,7 +64,4 @@ public abstract class Acoount {
                 return result;
     }
     
-    
-}
-
-
+}*/

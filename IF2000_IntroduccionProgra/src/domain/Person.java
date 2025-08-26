@@ -8,7 +8,7 @@ package domain;
  *
  * @author Griss
  */
-public class Person {
+/*public class Person {
     //Atributes
     private String name;
     private String latName;
@@ -79,4 +79,4 @@ public class Person {
     }
     
     
-}
+}*/
