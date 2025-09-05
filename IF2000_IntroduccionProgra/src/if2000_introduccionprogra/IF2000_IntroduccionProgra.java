@@ -2,6 +2,8 @@ package if2000_introduccionprogra;
 
 import logic.Ejercicios_semana2_PracticaEnClase;
 import logic.Ejercicios_semana2_lab1;
+import logic.Quiz3;
+import logic.Ejercicios_lab2;
 
 /**
  *
@@ -9,6 +11,11 @@ import logic.Ejercicios_semana2_lab1;
  */
 public class IF2000_IntroduccionProgra {
     
+     /*public static void main(String[] args) {
+        Quiz3 ej = new Quiz3();
+        ej.ejercicio();
+    }*/
+
      /* @param args the command line arguments
  /*public static void main(String[] args) {
         // TODO code application logic here
@@ -35,12 +42,7 @@ public class IF2000_IntroduccionProgra {
         string, char
                 
         Objetos:
-        Object
-                
-                
-                
-                
-               
+        Object   
         
     }
     
@@ -165,9 +167,103 @@ public class IF2000_IntroduccionProgra {
         ej.ejercicio11();
     }
 }*/
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Ejercicios_semana2_lab1 
         ej = new Ejercicios_semana2_lab1();
         ej.ejercicio12();
+    }
+}*/
+    
+    /*  public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio13();
+    }
+}*/
+
+ /*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio14();
+    }
+ */
+
+ /*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio15();
+    }
+*/
+/*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio16();
+    }
+*/
+/*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio17();
+    }
+*/
+  /*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio18();
+    }
+*/
+/*  public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio19();
+    }
+*/
+    
+ /* public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio20();
+    }
+*/
+  /*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio21();
+    }
+*/
+  /*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio22();
+    }
+*/
+  /*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio23();
+    }
+*/
+  /*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio24();
+    }
+*/
+  /*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio25();
+    }
+*/
+  /*public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio26();
+    }
+*/
+    public static void main(String[] args) {
+        Ejercicios_lab2 
+        ej = new Ejercicios_lab2();
+        ej.ejercicio27();
     }
 }
