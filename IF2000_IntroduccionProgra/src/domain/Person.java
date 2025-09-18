@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package domain;
 
 /**
  *
  * @author Griss
  */
-/*public class Person {
+  public class Person {
     //Atributes
     private String name;
     private String latName;
@@ -70,7 +66,7 @@ package domain;
 
     @Override
     public String toString() {
-        return "Person{"
+        return "Person\n"
                 + "\n name=" + getName()
                 + "\n, latName=" + getLatName()
                 + "\n, id=" + getId()
@@ -79,4 +75,4 @@ package domain;
     }
     
     
-}*/
+}

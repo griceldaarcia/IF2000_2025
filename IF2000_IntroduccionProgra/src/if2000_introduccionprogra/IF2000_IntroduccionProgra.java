@@ -1,9 +1,18 @@
 package if2000_introduccionprogra;
 
+import domain.Person;
+import domain.SavingAccount;
 import logic.Ejercicios_semana2_PracticaEnClase;
 import logic.Ejercicios_semana2_lab1;
 import logic.Quiz3;
 import logic.Ejercicios_lab2;
+import domain.Bank;
+import domain.Log;
+import domain.SinpeMovil;
+import domain.SavingAccount;
+import domain.Current;
+import domain.Client;
+import domain.Account;
 
 /**
  *
@@ -12,9 +21,73 @@ import logic.Ejercicios_lab2;
 public class IF2000_IntroduccionProgra {
     
      /*public static void main(String[] args) {
-        Quiz3 ej = new Quiz3();
-        ej.ejercicio();
-    }*/
+         
+        Person client1 = 
+        new Person("Lucia", "Mora", "1-0356-5562", "88888888", 18);
+         
+         SavingAccount account1= 
+        new SavingAccount("18-09-2025", 12, 5, "1000567801", 25000, client1);
+         
+        account1.deposit(3000);
+        
+        System.out.println(account1.toString());
+        System.out.println("Withdraw of money");
+        account1.withdraw(16000);
+        System.out.println(account1.toString());
+     }
+}*/
+
+
+    public static void main(String[] args) {
+
+        // 1. Crear Bancos
+        Bank bcr = new Bank("BCR");
+        Bank bac = new Bank("BAC");
+
+        // 2. Crear Clientes
+        Client client1 = new Client("10101010", "Ana Perez", "8888-8888", "San José");
+        Client client2 = new Client("20202020", "Luis Gomez", "9999-9999", "Alajuela");
+
+        // 3. Crear Cuentas
+        Account savings1 = new SavingAccount("001", 1000.0, client1, "2025-09-01", 12, 0.05);
+        Account current1 = new Current("002", 2000.0, client2, 0.03);
+
+        // 4. Agregar cuentas a los Bancos
+        bcr.addAccount(savings1);
+        bac.addAccount(current1);
+
+        // 5. Realizar Depósito en cuenta de Ana
+        savings1.deposit(500.0);
+        Log log1 = new Log(1, "Deposit", savings1);
+        System.out.println(log1);
+
+        // 6. Realizar Retiro en cuenta de Ana
+        savings1.withdraw(300.0);
+        Log log2 = new Log(2, "Withdraw", savings1);
+        System.out.println(log2);
+
+        // 7. Probar Transferencia SINPE: Ana (BCR) → Luis (BAC)
+        boolean result = SinpeMovil.transfer(bcr, savings1, bac, current1, 200.0);
+        if (result) {
+            Log log3 = new Log(3, "SINPE Transfer", current1);
+            System.out.println(log3);
+        }
+
+        // 8. Mostrar saldos finales
+        System.out.println("\n Final balances:");
+        System.out.println("Ana (Savings - BCR): " + savings1.getBalance());
+        System.out.println("Luis (Current - BAC): " + current1.getBalance());
+
+        // 9. Mostrar todas las cuentas de cada banco
+        System.out.println("\n--- Accounts by bank ---");
+        bcr.showAccounts();
+        bac.showAccounts();
+    }
+}
+
+       //Quiz3 ej = new Quiz3();
+       // ej.ejercicio();
+    //}*/
 
      /* @param args the command line arguments
  /*public static void main(String[] args) {
@@ -261,9 +334,11 @@ public class IF2000_IntroduccionProgra {
         ej.ejercicio26();
     }
 */
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Ejercicios_lab2 
         ej = new Ejercicios_lab2();
         ej.ejercicio27();
     }
-}
+}*/
+    
+
